@@ -80,69 +80,69 @@
 
 
         <!--Formulario-->
-
-        <div class="row g-0 mt-3">
-            <h6 class="text-center fw-normal">VENTA</h6>
-            <h1 class="text-center">VALOR DE TICKET $200</h1>
-        </div>
-
-        <div class="row w-50 mt-3 mx-auto">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-            </div>
-            <div class="col-12 mt-4">
-                <input type="text" class="form-control" placeholder="Correo" aria-label="email">
-            </div>
-        </div>
-
-
-
-        <div class="row w-50 mt-4 mx-auto">
-
-            <div class="col">
-                <label for="inputCity" class="form-label">Cantidad</label>
-                <input type="text" class="form-control" id="cantidad">
+        <form action="">
+            <div class="row g-0 mt-3">
+                <h6 class="text-center fw-normal">VENTA</h6>
+                <h1 class="text-center">VALOR DE TICKET $200</h1>
             </div>
 
-            <div class="col">
-                <label for="inputState" class="form-label">Categoría</label>
-                <select id="categoria" class="form-select">
+            <div class="row w-50 mt-3 mx-auto">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+                <div class="col-12 mt-4">
+                    <input type="text" class="form-control" placeholder="Correo" aria-label="email">
+                </div>
+            </div>
+
+
+
+            <div class="row w-50 mt-4 mx-auto">
+
+                <div class="col">
+                    <label for="inputCity" class="form-label">Cantidad</label>
+                    <input type="text" class="form-control" id="cantidad">
+                </div>
+
+                <div class="col">
+                    <label for="inputState" class="form-label">Categoría</label>
+                    <select id="categoria" class="form-select">
       			<option selected>Seleccionar</option>
       			<option value="1" id="estudiante">Estudiante</option>
 				<option value="2" id="trainee">Trainee</option>
 				<option value="3" id="junior">Junior</option>
     		</select>
+                </div>
+
             </div>
 
-        </div>
+            <div class="row w-50 mt-4 mx-auto bg-primary bg-opacity-25 py-4 rounded d-flex align-items-center">
+                <div class="col-8 col-md-10">
+                    <h6 class="px-3">Total a Pagar: $</h6>
+                </div>
+                <div class="col-4 col-md-2">
+                    <!--<input type="text" name="total2" id="total" style="background-color:transparent; border: none"  autocomplete="off"/>-->
 
-        <div class="row w-50 mt-4 mx-auto bg-primary bg-opacity-25 py-4 rounded d-flex align-items-center">
-            <div class="col-8 col-md-10">
-                <h6 class="px-3">Total a Pagar: $</h6>
+                    <p class="fs-4" id="total"></p>
+
+                    <!--<input type="text" class="" id="total" aria-label="preciototal">-->
+                </div>
             </div>
-            <div class="col-4 col-md-2">
-                <!--<input type="text" name="total2" id="total" style="background-color:transparent; border: none"  autocomplete="off"/>-->
+            <!-- <output id="total"></output> -->
 
-                <p class="fs-4" id="total"></p>
-
-                <!--<input type="text" class="" id="total" aria-label="preciototal">-->
+            <div class="row w-50 mx-auto my-5">
+                <div class="d-grid col-6 mx-auto ">
+                    <button type="reset" class="btn btn-lg text-light" id="borrar" style="background-color:#82bd2e">Borrar</button>
+                </div>
+                <div class="d-grid col-6 mx-auto ">
+                    <button class="btn btn-lg text-light" id="resumen" style="background-color:#82bd2e" type="button">Resumen</button>
+                </div>
             </div>
-        </div>
-        <!-- <output id="total"></output> -->
 
-        <div class="row w-50 mx-auto my-5">
-            <div class="d-grid col-6 mx-auto ">
-                <button class="btn btn-lg text-light" id="borrar" style="background-color:#82bd2e" type="reset">Borrar</button>
-            </div>
-            <div class="d-grid col-6 mx-auto ">
-                <button class="btn btn-lg text-light" id="resumen" style="background-color:#82bd2e" type="button">Resumen</button>
-            </div>
-        </div>
-
-
+        </form>
 
         <!--Fin Formulario-->
 
